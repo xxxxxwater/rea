@@ -34,5 +34,8 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "pack:check": "node ./scripts/check-pack.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-mcp-client": "0.2.1-rc.3"
   }
 }
