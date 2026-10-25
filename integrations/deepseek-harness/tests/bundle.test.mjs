@@ -40,5 +40,5 @@ test('REA reconnection policy is bounded and installation does not run lifecycle
   assert.ok(lines.includes('          enabled: true'));
   assert.ok(lines.includes('          maxAttempts: 10'));
   assert.equal(Object.keys(manifest.scripts).some((s) => /^(pre|post)?install$|^prepare$/.test(s)), false);
-  assert.equal(manifest.dependencies, undefined);
+  assert.equal(manifest.dependencies['@deepseek-ai/dsh-mcp-client'], '0.2.1-rc.3');
 });
