@@ -64,6 +64,13 @@ Thiết lập đăng ký REA với tác nhân và cài hướng dẫn công vi�
 
 > **[Truy cập trang web REA](https://rea.tools/vi/)** để xem cách thiết lập, hướng dẫn có hình minh họa và các nghiên cứu điển hình thực tế.
 
+## Plugin DeepSeek Harness (bản fork)
+
+Bản fork này cung cấp `dsh-rea-bundle@0.3.0` cho REA `6.8.0`. Cài `.tgz` trong **Plugins → Install** rồi chọn **Enable now**. Không sử dụng đồng thời `rea setup --client dsh` vì cả hai đều đăng ký `rea-mcp`.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## Bắt đầu nhanh
 
 Trên Linux, khởi chạy Ghidra, JADX và công cụ firmware cùng phân tích tĩnh JavaScript/Electron cần `ps` tương thích procps trong `PATH` của REA để kiểm tra quyền sở hữu tiến trình. Xem điều kiện Linux.

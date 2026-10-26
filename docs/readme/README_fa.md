@@ -56,6 +56,13 @@ REA ایجنت شما را به ابزارهایی برای بررسی باین�
 
 > برای دستورالعمل‌های راه‌اندازی، راهنماهای تصویری و مطالعات موردی واقعی، **[به وب‌سایت REA مراجعه کنید](https://rea.tools/fa/)**.
 
+## افزونه DeepSeek Harness (فورک)
+
+این فورک `dsh-rea-bundle@0.3.0` را برای REA `6.8.0` ارائه می‌کند. فایل `.tgz` را از **Plugins → Install** نصب و **Enable now** را انتخاب کنید. هم‌زمان با `rea setup --client dsh` فعال نکنید؛ هر دو `rea-mcp` را ثبت می‌کنند.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## شروع سریع
 
 در Linux، اجرای Ghidra، JADX و ابزارهای firmware و تحلیل ایستای JavaScript/Electron برای بررسی مالکیت فرایندها به `ps` سازگار با procps در `PATH` مربوط به REA نیاز دارد. راهکارها در پیش‌نیاز Linux آمده‌اند.

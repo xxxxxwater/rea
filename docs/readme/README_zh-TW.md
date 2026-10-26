@@ -64,6 +64,13 @@ REA 將 AI 代理連接到分析工具，用於檢查原生二進位檔案、Jav
 
 > **[訪問 REA 網站](https://rea.tools/zh-TW/)**，查看設定說明、圖解指南和真實案例。
 
+## DeepSeek Harness 原生插件（Fork 版本）
+
+本 Fork 提供 `dsh-rea-bundle@0.3.0`，可將 REA `6.8.0` 接入 DeepSeek Harness。透過 **Plugins → Install** 安裝本地 `.tgz`，然後按 **Enable now**。請勿同時啟用 `rea setup --client dsh`，否則會重複註冊 `rea-mcp`。
+
+完整安裝步驟、相容性與尚未完成的驗證，請參閱 [Harness 集成指南](../deepseek-harness.md)（英文）。
+
+
 ## 快速開始
 
 Linux 上的 Ghidra、JADX、韌體工具啟動和靜態 JavaScript/Electron 分析需要在 REA 的 `PATH` 中提供相容 procps 的 `ps`，用於檢查程序所有權。復原步驟見安裝指南的 Linux 程序所有權前提。

@@ -66,6 +66,13 @@ Setup REA ko aapke agent ke saath register karta hai aur uske mutabiq workflow i
 
 > Setup instructions, tasveeron ke saath guides aur asli case studies ke liye **[REA ki website dekhein](https://rea.tools/)**.
 
+## DeepSeek Harness plugin (fork)
+
+Is fork mein REA `6.8.0` ke liye `dsh-rea-bundle@0.3.0` hai. Local `.tgz` ko **Plugins → Install** se install kar ke **Enable now** karein. `rea setup --client dsh` ke saath dono ko ek waqt par na chalayein, kyun ke dono `rea-mcp` register karte hain.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## Jaldi shuru karein
 
 Linux par Ghidra, JADX, firmware tools shuru karne aur static JavaScript/Electron

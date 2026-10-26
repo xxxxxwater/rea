@@ -8,6 +8,10 @@ verification work. Available tools and setup are documented in the
 [installation guide](installation.md), and
 [generated catalog](mcp-contracts.md#generated-catalog).
 
+## Fork-specific DeepSeek Harness qualification
+
+This fork includes [`dsh-rea-bundle@0.3.0`](deepseek-harness.md). Its static package checks and source-interface review are not a native certification. The remaining adapter milestone is a recorded **Desktop/Headless install, enable, MCP handshake, read-only fixture call and teardown/reconnect test** against an identified current DSH release. This is a fork maintenance item rather than a claim about the upstream REA roadmap.
+
 ## Priorities
 
 - Expand native architecture, type, and indirect-call verification.

@@ -528,6 +528,11 @@ client until a release containing it is published.
 
 ## DeepSeek Harness
 
+**Fork native bundle (alternative to direct setup):** [`dsh-rea-bundle@0.3.0`](deepseek-harness.md) declares a `dsh.bundle.patch` and an explicit DSH MCP client `0.2.1-rc.3` dependency, launching `rea-agents@6.8.0`. Install its tarball and select **Enable now** in the active profile. Disable a preexisting `rea-mcp` direct registration before switching to the bundle; do not activate both. The bundle is MCP-only and does not install the REA skill. Source compatibility does not establish a successful native Desktop handshake.
+
+**Standalone direct setup (alternative):** the existing instructions below document `rea setup --client dsh` editing the user's Cordis patch without a separate plugin package.
+
+
 DeepSeek Harness registers MCP clients through a Cordis YAML patch sequence
 rather than a `mcpServers` object. `rea setup --client dsh` appends (or
 replaces) the REA entry in the home patch `$DSH_HOME/cordis.patch.yml`

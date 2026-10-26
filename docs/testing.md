@@ -1,5 +1,18 @@
 # Testing REA
 
+## DeepSeek Harness bundle checks (fork)
+
+After changing `integrations/deepseek-harness/**`, run:
+
+```sh
+npm --prefix integrations/deepseek-harness test
+npm --prefix integrations/deepseek-harness run pack:check
+npm pack ./integrations/deepseek-harness --pack-destination .
+```
+
+Passing these checks verifies package content and static launcher metadata, **not** a native DSH session. The [live acceptance gate](deepseek-harness.md#verification-evidence-and-releases) requires installing/enabling the bundle, observing `mcp__rea__*`, calling a tool on an authorized fixture and exercising shutdown/recovery. Existing `verify:deepseek-client` covers a different direct-registration workflow.
+
+
 Use this guide when choosing coverage, pruning tests, or running a verification
 lane. Start with the commands below; use [real-toolchain lanes](#real-toolchain-verification-lanes)
 for engine prerequisites and [client verification](client-verification.md) for

@@ -5,6 +5,12 @@ The title becomes the squash-merge commit subject and generated changelog entry.
 
 ## Summary
 
+<!-- For PRs touching integrations/deepseek-harness, link to docs/deepseek-harness.md,
+report bundle manifest / pack tests and any actual native Desktop/Headless MCP
+handshake. Never treat CI tarball generation as proof of a successful tool call,
+and keep direct setup / bundle activation mutually exclusive. -->
+
+
 <!-- What user, agent, or maintainer problem does this solve? Link the issue
 with "Fixes #123" when applicable. Keep the prior behavior, expected contract,
 and new behavior understandable without private context. -->

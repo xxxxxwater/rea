@@ -64,6 +64,13 @@ REA はエージェントを分析ツールにつなぎ、ネイティブバイ�
 
 > **[REA のウェブサイト](https://rea.tools/ja/)**で、セットアップ手順、図解ガイド、実際の事例を確認できます。
 
+## DeepSeek Harness プラグイン（フォーク版）
+
+このフォークには REA `6.8.0` 用の `dsh-rea-bundle@0.3.0` があります。`.tgz` を **Plugins → Install** で導入し、**Enable now** で有効化してください。`rea setup --client dsh` との併用は `rea-mcp` が重複するため避けてください。
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## クイックスタート
 
 Linux での Ghidra、JADX、ファームウェアツールの起動と静的 JavaScript/Electron 解析には、プロセス所有権の確認用に、REA の `PATH` 上に procps 互換の `ps` が必要です。対処方法はインストールガイドの Linux 前提条件を参照してください。

@@ -1,5 +1,8 @@
 # CLI and Evidence
 
+DeepSeek Harness users may access this CLI through the fork-specific [profile bundle](deepseek-harness.md), which launches `npx --yes rea-agents@6.8.0 mcp` and exposes REA tools through the native DSH MCP client after a healthy handshake. Installing the profile bundle does **not** install a global `rea` command. The direct CLI workflows below remain independent of the DSH adapter.
+
+
 Use the CLI for a direct inspection or a script. It uses the same application
 workflows and evidence contracts as REA's MCP server. Each CLI invocation is a
 separate process; save results when you want to use them in a later command.

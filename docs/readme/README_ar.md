@@ -64,6 +64,13 @@
 
 > **[زر موقع REA](https://rea.tools/ar/)** للاطلاع على تعليمات الإعداد والأدلة المصوّرة ودراسات الحالة الفعلية.
 
+## إضافة DeepSeek Harness (نسخة fork)
+
+توفر هذه النسخة `dsh-rea-bundle@0.3.0` لـ REA `6.8.0`. ثبّت ملف `.tgz` من **Plugins → Install** ثم اختر **Enable now**. لا تجمعها مع `rea setup --client dsh` لأن كليهما يسجل `rea-mcp`.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## البدء السريع
 
 على Linux، يتطلب تشغيل Ghidra وJADX وأدوات البرامج الثابتة والتحليل الثابت لـ JavaScript/Electron وجود `ps` متوافق مع procps في `PATH` الخاص بـ REA للتحقق من ملكية العمليات. راجع متطلب Linux لخطوات المعالجة.
