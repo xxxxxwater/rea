@@ -11,6 +11,10 @@ Setup previews configuration changes and asks for approval before applying them.
 | Update or remove REA              | [Maintenance](#diagnose-update-and-remove)                                                          |
 | Resolve a client-specific problem | [Client configuration](client-configuration.md)                                                     |
 
+## DeepSeek Harness plugin bundle (fork)
+
+For the profile manager, follow the [DeepSeek Harness integration guide](deepseek-harness.md): package `dsh-rea-bundle@0.3.0` as a local tarball, install and explicitly enable it in the active profile. It pins REA `6.8.0` and the DSH MCP client `0.2.1-rc.3`. This **replaces**, not supplements, a pre-existing `rea setup --client dsh` registration in the same profile. Native acceptance remains unverified; the dated npm snapshots below are historical.
+
 ## Start setup
 
 ```bash

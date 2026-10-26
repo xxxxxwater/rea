@@ -1,5 +1,8 @@
 # Static analysis in GitHub Actions
 
+**Different from the fork's plugin packaging CI:** this page exercises REA CLI against an example application. The `dsh-rea-bundle.yml` workflow only validates a [DeepSeek Harness profile bundle](deepseek-harness.md), its declared dependency, launcher configuration and archive contents. Packaging CI alone does **not** prove a live DSH MCP handshake.
+
+
 The [minimal workflow](https://github.com/morluto/rea/blob/main/examples/github-actions/rea-analysis.yml) builds a small
 JavaScript application, analyzes its files without executing them, and uploads
 machine-readable results. It uses the existing CLI, not a separate GitHub Action

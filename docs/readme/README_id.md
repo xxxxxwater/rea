@@ -64,6 +64,13 @@ Proses penyiapan mendaftarkan REA ke agen Anda dan memasang instruksi alur kerja
 
 > **[Kunjungi situs web REA](https://rea.tools/id/)** untuk mendapatkan petunjuk penyiapan, panduan bergambar, dan studi kasus nyata.
 
+## Plugin DeepSeek Harness (fork)
+
+Fork ini menyediakan `dsh-rea-bundle@0.3.0` untuk REA `6.8.0`. Instal `.tgz` melalui **Plugins → Install**, lalu pilih **Enable now**. Jangan digunakan bersama `rea setup --client dsh` karena keduanya mendaftarkan `rea-mcp`.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## Mulai Cepat
 
 Di Linux, peluncuran Ghidra, JADX dan alat firmware serta analisis statis JavaScript/Electron memerlukan `ps` yang kompatibel dengan procps pada `PATH` REA untuk memeriksa kepemilikan proses. Lihat prasyarat Linux.

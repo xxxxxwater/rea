@@ -64,6 +64,13 @@ La configuración registra REA con tu agente e instala las instrucciones de trab
 
 > **[Visita el sitio web de REA](https://rea.tools/es/)** para encontrar instrucciones de configuración, guías ilustradas y casos reales.
 
+## Complemento de DeepSeek Harness (fork)
+
+Este fork incluye `dsh-rea-bundle@0.3.0` para REA `6.8.0`. Instala el `.tgz` local en **Plugins → Install** y selecciona **Enable now**. No lo combines con `rea setup --client dsh`: ambos registran `rea-mcp`.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## Inicio rápido
 
 En Linux, iniciar Ghidra, JADX y herramientas de firmware, y analizar JavaScript/Electron estáticamente, requiere un `ps` compatible con procps en el `PATH` de REA para comprobar la propiedad de los procesos. Consulta el requisito de Linux.

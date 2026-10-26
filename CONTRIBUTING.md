@@ -1,5 +1,10 @@
 # Contributing to REA
 
+## Fork-specific DeepSeek Harness adapter documentation
+
+Keep the [adapter README](integrations/deepseek-harness/README.md), its [changelog](integrations/deepseek-harness/CHANGELOG.md), [integration guide](docs/deepseek-harness.md), root README and [translated README files](docs/readme/) consistent when changing the adapter. Preserve exact REA/DSH MCP client pins and the distinction between `rea setup --client dsh` and the native DSH bundle. Run [the bundle checks](docs/testing.md#deepseek-harness-bundle-checks-fork) and report live Desktop/Headless verification separately. Historical verification reports, third-party licenses and generated upstream changelogs must not be rewritten as current compatibility evidence.
+
+
 REA welcomes focused bug fixes, documentation improvements, tests, and reverse-engineering workflows. For large contract or architecture changes, explain the intended scope and link the relevant issue or design discussion.
 
 ## Choosing a contribution

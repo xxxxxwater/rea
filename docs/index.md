@@ -25,6 +25,10 @@ features:
     link: /mcp-contracts
 ---
 
+## DeepSeek Harness plugin bundle (fork)
+
+The fork includes [`dsh-rea-bundle@0.3.0`](deepseek-harness.md), a native profile plugin that uses `rea-agents@6.8.0` and the Harness MCP client `0.2.1-rc.3`. Read the guide for installation, activation, migration from direct setup, and the unverified live-interop boundary. This integration is not a new upstream REA release.
+
 ## Start with one command
 
 ```bash

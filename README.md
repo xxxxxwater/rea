@@ -96,9 +96,15 @@ complete advertised field guidance and nested validation details. Both profiles
 keep the full tool set and canonical server validation. See
 "Compact input schema profile" in the MCP contracts guide.
 
-### Install as a native DeepSeek Harness plugin bundle
+### DeepSeek Harness native plugin bundle (fork)
 
-This fork also provides an [installable DeepSeek Harness REA bundle](integrations/deepseek-harness/README.md) for the latest profile-plugin manager. The bundle includes a `dsh.bundle.patch` manifest, pinned REA MCP startup, install/enable instructions and CI packaging tests. Use **either** this bundle or `rea setup --client dsh` to avoid duplicate registrations.
+This fork provides **`dsh-rea-bundle@0.3.0`** to install REA **`6.8.0`** through the DSH profile plugin manager, using the MCP client pinned to **`0.2.1-rc.3`** (source-interface review, **not** a verified live Desktop handshake).
+
+```sh
+npm pack ./integrations/deepseek-harness --pack-destination .
+```
+
+Install the resulting `dsh-rea-bundle-0.3.0.tgz` in **Plugins → Install**, then click **Enable now**. Do not also enable `rea setup --client dsh`; both methods register `rea-mcp`. See the [complete DSH guide](docs/deepseek-harness.md), [bundle README](integrations/deepseek-harness/README.md), and [bundle changelog](integrations/deepseek-harness/CHANGELOG.md) for compatibility, migration and outstanding tests.
 
 ### Ask your agent
 

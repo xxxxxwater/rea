@@ -64,6 +64,13 @@ REA подключает вашего агента к инструментам �
 
 > **[Посетите сайт REA](https://rea.tools/ru/)**: там есть инструкции по настройке, иллюстрированные руководства и реальные исследования.
 
+## Плагин DeepSeek Harness (форк)
+
+Этот форк содержит `dsh-rea-bundle@0.3.0` для REA `6.8.0`. Установите `.tgz` через **Plugins → Install** и выберите **Enable now**. Не используйте одновременно `rea setup --client dsh`: оба регистрируют `rea-mcp`.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## Быстрый старт
 
 В Linux для запуска Ghidra, JADX и инструментов прошивок, а также статического анализа JavaScript/Electron нужен совместимый с procps `ps` в `PATH` REA для проверки владения процессами. См. требование для Linux.

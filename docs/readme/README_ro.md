@@ -66,6 +66,13 @@ Programul de configurare înregistrează REA în agentul tău și instalează in
 
 > **[Vizitează site-ul REA](https://rea.tools/)** pentru instrucțiuni de configurare, ghiduri ilustrate și studii de caz reale.
 
+## Plugin DeepSeek Harness (fork)
+
+Acest fork oferă `dsh-rea-bundle@0.3.0` pentru REA `6.8.0`. Instalează `.tgz` local prin **Plugins → Install**, apoi alege **Enable now**. Nu îl activa împreună cu `rea setup --client dsh`: ambele înregistrează `rea-mcp`.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## Pornire rapidă
 
 Pe Linux, pornirea Ghidra, JADX și a uneltelor pentru firmware, precum și analiza

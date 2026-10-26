@@ -1,5 +1,7 @@
 # REA plugin bundle for DeepSeek Harness
 
+> **See also:** [complete integration guide](../../docs/deepseek-harness.md) and [bundle-specific changelog](CHANGELOG.md). Compatibility is based on a Harness 0.2.1-rc.3 source review; live Desktop/Headless MCP handshakes have not yet been verified.
+
 This directory packages [REA](https://github.com/morluto/rea) as an installable **DeepSeek Harness profile bundle**, compatible with the official profile-plugin manager introduced in Harness 0.2.1 (verified against the 0.2.1-rc.3 source interface). It is independent from `rea setup --client dsh`, which edits profile configuration directly.
 
 ## Install via the Desktop/Web plugin manager

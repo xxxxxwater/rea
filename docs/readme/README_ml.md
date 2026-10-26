@@ -66,6 +66,13 @@ Setup നിങ്ങളുടെ agent-ിൽ REA രജിസ്റ്റർ �
 
 > **[REA വെബ്സൈറ്റ് സന്ദർശിക്കുക](https://rea.tools/)** — setup നിർദ്ദേശങ്ങൾക്കും ചിത്രങ്ങളോടുകൂടിയ ഗൈഡുകൾക്കും യഥാർത്ഥ case study-കൾക്കും.
 
+## DeepSeek Harness പ്ലഗിൻ (ഫോർക്ക്)
+
+REA `6.8.0`-നായി ഈ ഫോർക്ക് `dsh-rea-bundle@0.3.0` നൽകുന്നു. `.tgz` **Plugins → Install** വഴി ഇൻസ്റ്റാൾ ചെയ്ത് **Enable now** തിരഞ്ഞെടുക്കുക. `rea setup --client dsh`-നൊപ്പം ഉപയോഗിക്കരുത്; രണ്ടും `rea-mcp` രജിസ്റ്റർ ചെയ്യും.
+
+For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
+
+
 ## ദ്രുതാരംഭം
 
 Linux-ൽ Ghidra, JADX, firmware tool launches, static JavaScript/Electron analysis എന്നിവയ്ക്ക് process ownership പരിശോധിക്കാൻ REA-യുടെ `PATH`-ൽ procps-compatible `ps` ആവശ്യമാണ്. പരിഹാര നടപടികൾ `docs/installation.md`-യിലെ "Linux owned-process prerequisite" എന്ന വിഭാഗത്തിൽ ലഭ്യമാണ്.
