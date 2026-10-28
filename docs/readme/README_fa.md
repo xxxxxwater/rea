@@ -62,7 +62,6 @@ REA ایجنت شما را به ابزارهایی برای بررسی باین�
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## شروع سریع
 
 در Linux، اجرای Ghidra، JADX و ابزارهای firmware و تحلیل ایستای JavaScript/Electron برای بررسی مالکیت فرایندها به `ps` سازگار با procps در `PATH` مربوط به REA نیاز دارد. راهکارها در پیش‌نیاز Linux آمده‌اند.

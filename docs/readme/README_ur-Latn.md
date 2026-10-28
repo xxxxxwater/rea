@@ -72,7 +72,6 @@ Is fork mein REA `6.8.0` ke liye `dsh-rea-bundle@0.3.0` hai. Local `.tgz` ko **P
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## Jaldi shuru karein
 
 Linux par Ghidra, JADX, firmware tools shuru karne aur static JavaScript/Electron

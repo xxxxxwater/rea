@@ -532,7 +532,6 @@ client until a release containing it is published.
 
 **Standalone direct setup (alternative):** the existing instructions below document `rea setup --client dsh` editing the user's Cordis patch without a separate plugin package.
 
-
 DeepSeek Harness registers MCP clients through a Cordis YAML patch sequence
 rather than a `mcpServers` object. `rea setup --client dsh` appends (or
 replaces) the REA entry in the home patch `$DSH_HOME/cordis.patch.yml`

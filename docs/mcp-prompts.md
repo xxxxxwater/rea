@@ -2,7 +2,6 @@
 
 **DeepSeek Harness:** this fork's [native DSH profile bundle](deepseek-harness.md) exposes `mcp__rea__*` after a successful MCP handshake. The bundle does **not** install the separate `reverse-engineer-anything` skill. Using `rea setup --client dsh` is a different registration method; avoid enabling both, as they claim the same `rea-mcp` namespace.
 
-
 REA exposes six provider-neutral investigation workflows through the MCP
 `prompts` capability. They complement the generated tool catalog; they do not add, remove, or
 invoke tools by themselves.

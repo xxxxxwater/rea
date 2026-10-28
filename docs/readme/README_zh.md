@@ -70,7 +70,6 @@ REA 将智能体连接到分析工具，用于检查原生二进制文件、Java
 
 完整安裝步驟、相容性與尚未完成的驗證，請參閱 [Harness 集成指南](../deepseek-harness.md)（英文）。
 
-
 ## 快速开始
 
 Linux 上的 Ghidra、JADX、固件工具启动和静态 JavaScript/Electron 分析需要在 REA 的 `PATH` 中提供兼容 procps 的 `ps`，用于检查进程所有权。恢复步骤见安装指南的 Linux 进程所有权前提。

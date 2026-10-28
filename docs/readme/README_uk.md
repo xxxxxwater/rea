@@ -70,7 +70,6 @@ REA підключає вашого агента до інструментів �
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## Швидкий старт
 
 У Linux для запуску Ghidra, JADX та інструментів прошивок, а також статичного аналізу JavaScript/Electron потрібен сумісний із procps `ps` у `PATH` REA для перевірки володіння процесами. Див. передумову для Linux.

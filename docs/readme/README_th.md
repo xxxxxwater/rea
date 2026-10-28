@@ -70,7 +70,6 @@ fork นี้มี `dsh-rea-bundle@0.3.0` สำหรับ REA `6.8.0` ต�
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## เริ่มต้นอย่างรวดเร็ว
 
 บน Linux การเปิด Ghidra, JADX และเครื่องมือเฟิร์มแวร์ รวมถึงการวิเคราะห์ JavaScript/Electron แบบสแตติก ต้องมี `ps` ที่เข้ากันได้กับ procps ใน `PATH` ของ REA เพื่อตรวจสอบความเป็นเจ้าของโปรเซส ดูข้อกำหนดของ Linuxสำหรับวิธีแก้ไข

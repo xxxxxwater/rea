@@ -2,7 +2,6 @@
 
 **Fork adapter documentation:** the DeepSeek Harness `dsh-rea-bundle@0.3.0` instructions are maintained separately in [docs/deepseek-harness.md](../docs/deepseek-harness.md) and [integrations/deepseek-harness/README.md](../integrations/deepseek-harness/README.md). They describe a fork-maintained adapter, not a new upstream REA release. The public website's translated gettext catalogs and generated static pages are not changed by a Markdown-only integration documentation update.
 
-
 > A good website is like a good paper: easy to follow, clear and concise, with a clean, refined presentation.
 >
 > — N0zoM1z0

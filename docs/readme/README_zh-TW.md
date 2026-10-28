@@ -70,7 +70,6 @@ REA 將 AI 代理連接到分析工具，用於檢查原生二進位檔案、Jav
 
 完整安裝步驟、相容性與尚未完成的驗證，請參閱 [Harness 集成指南](../deepseek-harness.md)（英文）。
 
-
 ## 快速開始
 
 Linux 上的 Ghidra、JADX、韌體工具啟動和靜態 JavaScript/Electron 分析需要在 REA 的 `PATH` 中提供相容 procps 的 `ps`，用於檢查程序所有權。復原步驟見安裝指南的 Linux 程序所有權前提。

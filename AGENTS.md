@@ -4,7 +4,6 @@
 
 The [DSH adapter guide](docs/deepseek-harness.md) and [bundle README](integrations/deepseek-harness/README.md) own the fork-specific install, enable, migration and MCP protocol notes. Keep the REA version, MCP client dependency, translated README references and package-file tests aligned. Never direct users to enable both the native bundle and `rea setup --client dsh`, since they both register `rea-mcp`. Static packaging checks and source-interface review are not proof of native Desktop/Headless tool execution. Do not modify historical receipts, third-party documents, or SKILL instructions merely to force a project-wide Markdown diff.
 
-
 ## Product and Authority
 
 REA is a local-only reverse-engineering tool with shared CLI/MCP workflows. Distinguish observations, derivations, inferences, and unknowns; preserve Evidence provenance and session semantics through both adapters. Provider support and setup live in [README.md](README.md#choosing-a-deep-analysis-provider) and its linked guides.

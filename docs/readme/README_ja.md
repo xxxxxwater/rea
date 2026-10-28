@@ -70,7 +70,6 @@ REA はエージェントを分析ツールにつなぎ、ネイティブバイ�
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## クイックスタート
 
 Linux での Ghidra、JADX、ファームウェアツールの起動と静的 JavaScript/Electron 解析には、プロセス所有権の確認用に、REA の `PATH` 上に procps 互換の `ps` が必要です。対処方法はインストールガイドの Linux 前提条件を参照してください。

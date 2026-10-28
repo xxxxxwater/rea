@@ -4,7 +4,6 @@
 
 The [`dsh-rea-bundle@0.3.0`](deepseek-harness.md) profile adapter pins REA `6.8.0` and the MCP client `0.2.1-rc.3`. It has **static manifest and packaging tests** but no recorded live Desktop/Headless handshake or analysis call. The older `verify:deepseek-client` result described below covers **direct setup** on its stated historical DSH version; it must not be cited as acceptance of the new profile bundle. See the [live acceptance checklist](deepseek-harness.md#verification-evidence-and-releases).
 
-
 FreeBuff MCP loading and personal skill discovery are currently unverified with
 an installed native client/version. Its temporary-filesystem coverage verifies
 REA's configuration and applicability boundaries only; it does not establish

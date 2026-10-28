@@ -72,7 +72,6 @@
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## Γρήγορη εκκίνηση
 
 Στο Linux, η εκκίνηση Ghidra, JADX και εργαλείων firmware και η στατική ανάλυση JavaScript/Electron απαιτούν `ps` συμβατό με procps στο `PATH` του REA για έλεγχο ιδιοκτησίας διεργασιών. Δες την προϋπόθεση Linux.

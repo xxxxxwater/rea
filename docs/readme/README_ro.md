@@ -72,7 +72,6 @@ Acest fork oferă `dsh-rea-bundle@0.3.0` pentru REA `6.8.0`. Instalează `.tgz` 
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## Pornire rapidă
 
 Pe Linux, pornirea Ghidra, JADX și a uneltelor pentru firmware, precum și analiza

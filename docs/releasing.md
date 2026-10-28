@@ -2,8 +2,7 @@
 
 ## Fork-specific DeepSeek Harness bundle releases
 
-The profile adapter `dsh-rea-bundle@0.3.0` in `integrations/deepseek-harness` has its [own changelog](../integrations/deepseek-harness/CHANGELOG.md). Merging its PR or producing a CI archive does **not** create an official REA npm or MCP Registry release. Pin both the REA runtime and the DSH MCP client, qualify the package and capture the [live adapter evidence](deepseek-harness.md#verification-evidence-and-releases) before distribution. The core REA publication process documented below is separate.
-
+The profile adapter `dsh-rea-bundle@0.3.0` in `integrations/deepseek-harness` has its [own changelog](https://github.com/xxxxxwater/rea/blob/main/integrations/deepseek-harness/CHANGELOG.md). Merging its PR or producing a CI archive does **not** create an official REA npm or MCP Registry release. Pin both the REA runtime and the DSH MCP client, qualify the package and capture the [live adapter evidence](deepseek-harness.md#verification-evidence-and-releases) before distribution. The core REA publication process documented below is separate.
 
 Pushes to main automatically open or refresh a Release Please PR with the next
 version and changelog. Review its migration notes and wait for its current CI

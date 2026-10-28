@@ -72,7 +72,6 @@ REA `6.8.0`-നായി ഈ ഫോർക്ക് `dsh-rea-bundle@0.3.0` നൽ
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## ദ്രുതാരംഭം
 
 Linux-ൽ Ghidra, JADX, firmware tool launches, static JavaScript/Electron analysis എന്നിവയ്ക്ക് process ownership പരിശോധിക്കാൻ REA-യുടെ `PATH`-ൽ procps-compatible `ps` ആവശ്യമാണ്. പരിഹാര നടപടികൾ `docs/installation.md`-യിലെ "Linux owned-process prerequisite" എന്ന വിഭാഗത്തിൽ ലഭ്യമാണ്.

@@ -70,7 +70,6 @@
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## البدء السريع
 
 على Linux، يتطلب تشغيل Ghidra وJADX وأدوات البرامج الثابتة والتحليل الثابت لـ JavaScript/Electron وجود `ps` متوافق مع procps في `PATH` الخاص بـ REA للتحقق من ملكية العمليات. راجع متطلب Linux لخطوات المعالجة.

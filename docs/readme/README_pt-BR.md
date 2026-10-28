@@ -70,7 +70,6 @@ Este fork oferece `dsh-rea-bundle@0.3.0` para REA `6.8.0`. Instale o `.tgz` em *
 
 For details and unverified runtime coverage, see the [Harness integration guide](../deepseek-harness.md) (English).
 
-
 ## Início rápido
 
 No Linux, iniciar Ghidra, JADX e ferramentas de firmware e analisar JavaScript/Electron estaticamente exige um `ps` compatível com procps no `PATH` do REA para verificar a propriedade dos processos. Veja o pré-requisito do Linux.

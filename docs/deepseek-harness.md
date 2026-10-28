@@ -4,12 +4,12 @@
 
 ## Compatibility matrix
 
-| Component | Pinned version | Meaning |
-| --- | --- | --- |
-| REA CLI | `rea-agents@6.8.0` | Subprocess started as an MCP server |
-| DSH bundle | `dsh-rea-bundle@0.3.0` | Installable profile plugin from this fork |
-| DSH MCP client | `@deepseek-ai/dsh-mcp-client@0.2.1-rc.3` | Explicit bundle dependency |
-| Node.js | `^22.23.4 || ^24.22.1 || >=26.12.1` | REA's runtime requirement |
+| Component      | Pinned version                           | Meaning                                   |
+| -------------- | ---------------------------------------- | ----------------------------------------- |
+| REA CLI        | `rea-agents@6.8.0`                       | Subprocess started as an MCP server       |
+| DSH bundle     | `dsh-rea-bundle@0.3.0`                   | Installable profile plugin from this fork |
+| DSH MCP client | `@deepseek-ai/dsh-mcp-client@0.2.1-rc.3` | Explicit bundle dependency                |
+| Node.js        | `^22.23.4 \|\| ^24.22.1 \|\| >=26.12.1`  | REA's runtime requirement                 |
 
 Check against later Harness releases before assuming the same APIs remain compatible. The bundle uses `dsh.bundle.patch` and an `rea-mcp` Cordis row with `serverName: rea`; the MCP tools should appear as `mcp__rea__*` **only after a successful connection**.
 
@@ -48,13 +48,13 @@ The bundle launches `npx --yes rea-agents@6.8.0 mcp`, so the first launch may re
 
 ## Troubleshooting
 
-| Symptom | Diagnosis |
-| --- | --- |
-| Installed, but not visible in tool list | Check `dsh.profile.bundles` for the **active** profile; select **Enable now**, restart if HMR is unavailable and review MCP logs. |
-| Duplicate `rea-mcp` or `serverName: rea` | Disable the older direct setup or bundle registration; avoid removing unrelated entries. |
-| `ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED` | Install the prepacked local `.tgz`, not a Git dependency that requires a prepare script. |
-| REA process cannot start | Verify Node meets the requirement, `npx` is on PATH, and the pinned npm REA version can be fetched or cached. |
-| MCP startup fails or tools disconnect | `failOnStartupError: true` reports initial failures. The declared reconnect policy is bounded (up to 10 failed attempts). Investigate Host logs rather than assuming the plugin is working. |
+| Symptom                                  | Diagnosis                                                                                                                                                                                   |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Installed, but not visible in tool list  | Check `dsh.profile.bundles` for the **active** profile; select **Enable now**, restart if HMR is unavailable and review MCP logs.                                                           |
+| Duplicate `rea-mcp` or `serverName: rea` | Disable the older direct setup or bundle registration; avoid removing unrelated entries.                                                                                                    |
+| `ERR_PNPM_GIT_DEP_PREPARE_NOT_ALLOWED`   | Install the prepacked local `.tgz`, not a Git dependency that requires a prepare script.                                                                                                    |
+| REA process cannot start                 | Verify Node meets the requirement, `npx` is on PATH, and the pinned npm REA version can be fetched or cached.                                                                               |
+| MCP startup fails or tools disconnect    | `failOnStartupError: true` reports initial failures. The declared reconnect policy is bounded (up to 10 failed attempts). Investigate Host logs rather than assuming the plugin is working. |
 
 ## Verification, evidence and releases
 
@@ -63,6 +63,6 @@ npm --prefix integrations/deepseek-harness test
 npm --prefix integrations/deepseek-harness run pack:check
 ```
 
-The [bundle workflow](../.github/workflows/dsh-rea-bundle.yml) checks the manifest, REA version, YAML registration and tarball file list. CI packaging success is **not** live Harness interoperability. Native qualification still requires a recorded Host/OS/Node/REA version, archive hash, plugin activation state, MCP `tools/list`, one REA tool call, and teardown/failure-recovery results. At the time of this revision those native receipts are **not available**.
+The [bundle workflow](https://github.com/xxxxxwater/rea/blob/main/.github/workflows/dsh-rea-bundle.yml) checks the manifest, REA version, YAML registration and tarball file list. CI packaging success is **not** live Harness interoperability. Native qualification still requires a recorded Host/OS/Node/REA version, archive hash, plugin activation state, MCP `tools/list`, one REA tool call, and teardown/failure-recovery results. At the time of this revision those native receipts are **not available**.
 
-Adapter changes and releases are recorded in the [bundle-specific changelog](../integrations/deepseek-harness/CHANGELOG.md). The official core's generated [CHANGELOG](../CHANGELOG.md) and REA upstream publication process are separate. For details see [client configuration](client-configuration.md), [client verification](client-verification.md), and [installation](installation.md).
+Adapter changes and releases are recorded in the [bundle-specific changelog](https://github.com/xxxxxwater/rea/blob/main/integrations/deepseek-harness/CHANGELOG.md). The official core's generated [CHANGELOG](https://github.com/xxxxxwater/rea/blob/main/CHANGELOG.md) and REA upstream publication process are separate. For details see [client configuration](client-configuration.md), [client verification](client-verification.md), and [installation](installation.md).
