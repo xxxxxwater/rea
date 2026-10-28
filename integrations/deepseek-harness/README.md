@@ -11,10 +11,10 @@ This directory packages [REA](https://github.com/morluto/rea) as an installable 
    ```sh
    npm pack ./integrations/deepseek-harness --pack-destination .
    ```
-   This produces `dsh-rea-bundle-0.3.0.tgz` in the repository root.
+   This produces `dsh-rea-bundle-<version>.tgz` (currently `dsh-rea-bundle-0.3.0.tgz`) in the repository root.
 3. In Harness **Plugins → Install**, select the tarball's absolute path. The manager checks `dsh.bundle.patch` before installing the package.
 4. After installation, choose **Enable now** for `dsh-rea-bundle` (installation and activation are separate). If no hot-reload is configured, fully restart the Harness Desktop/Web host. The MCP client exposes tools prefixed `mcp__rea__`.
-5. If REA had already been registered using `rea setup --client dsh`, remove or disable the old `rea-mcp` entry *before* enabling this bundle to avoid duplicate IDs and MCP namespace collision. Keep a backup of the profile patch.
+5. If REA had already been registered using `rea setup --client dsh`, remove or disable the old `rea-mcp` entry _before_ enabling this bundle to avoid duplicate IDs and MCP namespace collision. Keep a backup of the profile patch.
 
 The bundle declares `@deepseek-ai/dsh-mcp-client@0.2.1-rc.3` as an explicit dependency (rather than assuming it is available from the host) and launches `npx --yes rea-agents@6.8.0 mcp` with stdio. Pinning is intentional: source-repository commits and floating npm `latest` are not equivalent to reproducible runtime versions. Startup fails visibly when npm cannot fetch REA, the required Node version is missing, or the MCP handshake fails. The Harness MCP client is configured to reconnect (up to 10 failed attempts) after an established connection drops.
 
@@ -23,11 +23,13 @@ The bundle declares `@deepseek-ai/dsh-mcp-client@0.2.1-rc.3` as an explicit depe
 ## Direct registration alternative
 
 REA also has a built-in setup path:
+
 ```sh
 npx rea-agents@6.8.0 setup --client dsh --dry-run
 npx rea-agents@6.8.0 setup --client dsh
 npx rea-agents@6.8.0 doctor --client dsh --skill
 ```
+
 Use **either** the direct setup or this profile bundle, not both. Direct setup also manages REA's separate agent skill; this profile bundle installs only the MCP connection, not a skill. All reverse-engineering analysis runs under the permissions of the Harness host and REA's providers; grant access only to targets you are authorized to analyze.
 
 ## Build validation
@@ -38,5 +40,13 @@ npm --prefix integrations/deepseek-harness run pack:check
 ```
 
 The tests validate the declared bundle contract, pinned REA command, namespace, and tarball file list. A **live** end-to-end verification must additionally start the latest Harness Desktop or Headless profile and confirm `mcp__rea__` tools appear. Passing pack/manifest tests is **not** evidence of a successful live MCP handshake.
+
+### Updating the pinned REA version
+
+`tests/bundle.test.mjs` intentionally requires the `rea-agents@<version>` pin in `cordis.patch.yml` to equal the repository root `package.json` version. When the root REA version changes (for example after syncing upstream), the bundle test fails until you:
+
+1. Update `rea-agents@<version>` in `cordis.patch.yml` (and the matching references in this README and `docs/deepseek-harness.md`).
+2. Bump `version` in this directory's `package.json` and add an entry to `CHANGELOG.md`.
+3. Re-run the build validation commands above. The CI workflow derives the tarball name from `npm pack --json`, so it needs no edit.
 
 This adapter is maintained by the fork at [xxxxxwater/rea](https://github.com/xxxxxwater/rea); the REA engine, cli package, and license remain attributed to their upstream project.

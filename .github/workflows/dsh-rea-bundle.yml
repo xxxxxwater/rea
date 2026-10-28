@@ -2,15 +2,15 @@ name: DSH REA bundle
 on:
   pull_request:
     paths:
-      - 'integrations/deepseek-harness/**'
-      - '.github/workflows/dsh-rea-bundle.yml'
-      - 'package.json'
+      - "integrations/deepseek-harness/**"
+      - ".github/workflows/dsh-rea-bundle.yml"
+      - "package.json"
   push:
     branches: [main]
     paths:
-      - 'integrations/deepseek-harness/**'
-      - '.github/workflows/dsh-rea-bundle.yml'
-      - 'package.json'
+      - "integrations/deepseek-harness/**"
+      - ".github/workflows/dsh-rea-bundle.yml"
+      - "package.json"
   workflow_dispatch:
 
 permissions:
@@ -20,19 +20,23 @@ jobs:
   verify-bundle:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: '24.22.1'
+          node-version: "24.22.1"
       - name: Verify manifest and compatibility contract
         run: npm --prefix integrations/deepseek-harness test
       - name: Check package file list
         run: npm --prefix integrations/deepseek-harness run pack:check
       - name: Assemble installable bundle
-        run: npm pack ./integrations/deepseek-harness --pack-destination .
+        id: pack
+        run: |
+          tarball="$(npm pack ./integrations/deepseek-harness --pack-destination . --json | node -e 'let s="";process.stdin.on("data",(d)=>(s+=d)).on("end",()=>console.log(JSON.parse(s)[0].filename))')"
+          test -f "$tarball"
+          echo "tarball=$tarball" >> "$GITHUB_OUTPUT"
       - name: Upload installable plugin
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: dsh-rea-bundle
-          path: dsh-rea-bundle-0.3.0.tgz
+          path: ${{ steps.pack.outputs.tarball }}
           if-no-files-found: error

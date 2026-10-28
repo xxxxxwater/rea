@@ -1,10 +1,11 @@
 # DeepSeek Harness 0.2.1-rc.3+ plugin bundle.
-# The MCP client is supplied by Harness; REA is launched as a pinned
+# The MCP client is the bundle's explicit @deepseek-ai/dsh-mcp-client
+# dependency (not assumed from the host); REA is launched as a pinned
 # published npm CLI. Do not also run "rea setup --client dsh": that
 # registers the same rea-mcp row and the rea server namespace twice.
 - insert:
     - id: rea-mcp
-      name: '@deepseek-ai/dsh-mcp-client'
+      name: "@deepseek-ai/dsh-mcp-client"
       config:
         serverName: rea
         transport: stdio
